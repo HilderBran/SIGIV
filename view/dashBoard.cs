@@ -12,7 +12,7 @@ namespace view
 {
     public partial class dashBoard : Form
     { 
-        public dashBoard(Login login)
+        public dashBoard()
         {
             InitializeComponent(); 
         }

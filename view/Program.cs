@@ -20,6 +20,7 @@ namespace view
 
             var build = new HostBuilder().ConfigureServices((hostContext, services) => { 
                 services.AddSingleton<Login>();
+                services.AddSingleton<dashBoard>();
                 services.AddSingleton<LoginController>(); 
             });
 

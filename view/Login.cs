@@ -30,10 +30,8 @@ namespace view
             try {
                 // await controller.Loggin(txtUsuario.Text, txtContraseña.Text
                 if (true) {
-                    
-                    this.dashBoard.ShowDialog();
                     this.Hide();
-                    
+                    this.dashBoard.ShowDialog(); 
                 }
             }
             catch (Exception exc) {
