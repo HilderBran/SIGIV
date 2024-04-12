@@ -25,7 +25,7 @@ namespace view
 
             using (var serviceScope = host.Services.CreateScope()) {
                 var form = serviceScope.ServiceProvider.GetService<Form1>();
-                Application.Run(form);
+                Application.Run(form!);
             }
 
 
