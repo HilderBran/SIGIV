@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="Models">
-      <HintPath>..\Models\obj\Debug\net8.0\Models.dll</HintPath>
+      <HintPath>..\..\..\..\Users\lokoc\source\repos\HilderBran\SIGIV\Models\obj\Debug\net8.0\Models.dll</HintPath>
     </Reference>
   </ItemGroup>
 
