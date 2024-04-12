@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace view
 {
     public partial class dashBoard : Form
-    {
-        public dashBoard()
+    { 
+        public dashBoard(Login login)
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }

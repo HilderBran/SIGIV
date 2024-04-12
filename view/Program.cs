@@ -1,3 +1,4 @@
+using Controller;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -18,14 +19,15 @@ namespace view
             Application.SetCompatibleTextRenderingDefault(false);
 
             var build = new HostBuilder().ConfigureServices((hostContext, services) => { 
-                services.AddSingleton<Form1>();
+                services.AddSingleton<Login>();
+                services.AddSingleton<LoginController>(); 
             });
 
             var host = build.Build(); 
 
             using (var serviceScope = host.Services.CreateScope()) {
-                var form = serviceScope.ServiceProvider.GetService<Form1>();
-                Application.Run(form!);
+                var login = serviceScope.ServiceProvider.GetService<Login>();
+                Application.Run(login!);
             }
 
 
