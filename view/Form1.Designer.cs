@@ -46,7 +46,7 @@
             // 
             // IdPais
             // 
-            IdPais.Location = new Point(201, 99);
+            IdPais.Location = new Point(201, 94);
             IdPais.Name = "IdPais";
             IdPais.Size = new Size(100, 23);
             IdPais.TabIndex = 1;
@@ -64,7 +64,7 @@
             Guardar.Name = "Guardar";
             Guardar.Size = new Size(75, 23);
             Guardar.TabIndex = 3;
-            Guardar.Text = "button1";
+            Guardar.Text = "Guardar";
             Guardar.UseVisualStyleBackColor = true;
             Guardar.Click += Guardar_Click;
             // 
