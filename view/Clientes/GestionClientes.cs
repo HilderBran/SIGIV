@@ -19,14 +19,7 @@ namespace view.Clientes
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            asdw
-
-
-
-
-
-
-
+             
         }
 
         private void lstBox_SelectedIndexChanged(object sender, EventArgs e)
