@@ -5,7 +5,7 @@ namespace view
 {
     public partial class AgregarPais : Form
     {
-        public static Paise editarpais { get; set; } = new Paise();
+        public static Paise editarpais { get; set; } = null!;
         private PaisController controller;
 
         public AgregarPais()
@@ -32,7 +32,7 @@ namespace view
 
         protected override void OnClosed(EventArgs e)
         {
-            editarpais = null;
+            editarpais = null!;
             base.OnClosed(e);
         }
         private async void Guardar_Click(object sender, EventArgs e)
@@ -49,7 +49,9 @@ namespace view
 
         private void cancelarpais_Click(object sender, EventArgs e)
         {
-            editarpais = null;
+            IdPais.Text = string.Empty;
+            Pais.Text = string.Empty;
+            editarpais = null!;
             Close();
         }
         public async Task agregarpais()
@@ -60,6 +62,8 @@ namespace view
 
                 if (result)
                 {
+                    IdPais.Text = string.Empty;
+                    Pais.Text = string.Empty;
                     MessageBox.Show("Se registro correctamente el pais");
                 }
                 else

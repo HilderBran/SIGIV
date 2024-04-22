@@ -36,7 +36,32 @@ namespace Controller
             return bandera;
         }
 
-        public async Task<List<Paise >> GetPaises()
+        public async Task<bool> DetelePais(string IdPais, string Pais)
+        {
+            bool bandera = false;
+
+            try
+            {
+                Paise paise = new Paise();
+                paise.IdPais = IdPais;
+                paise.Pais = Pais;
+                using (SigivContext context = new SigivContext())
+                {
+                    context.Paises.Remove(paise);
+
+                    await context.SaveChangesAsync();
+                }
+                bandera = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return bandera;
+        }
+
+        public async Task<List<Paise>> GetPaises()
         {
             List<Paise> ListPais;
             try

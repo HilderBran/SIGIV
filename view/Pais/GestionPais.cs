@@ -1,4 +1,5 @@
 ﻿using Controller;
+using Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,19 +49,53 @@ namespace view.Pais
 
         private void editarpais_Click(object sender, EventArgs e)
         {
+            if (dgvpaises.SelectedRows.Count >= 0)
+            {
+                AgregarPais.editarpais = new Paise();
+                AgregarPais.editarpais.IdPais = dgvpaises.CurrentRow.Cells[0].Value.ToString()!;
+                AgregarPais.editarpais.Pais = dgvpaises.CurrentRow.Cells[1].Value.ToString()!;
+            }
             agregarPais.ShowDialog();
         }
 
-        private void dgvpaises_SelectionChanged(object sender, EventArgs e)
+        private async void eliminarpais_Click(object sender, EventArgs e)
         {
-            var datagrid=(DataGridView)sender;
-            if (datagrid.SelectedRows.Count>0)
+            try
             {
-                DataGridViewRow viewRow = datagrid.SelectedRows[0];
-                AgregarPais.editarpais.IdPais = viewRow.Cells["IdPais"].Value.ToString()!;
-                AgregarPais.editarpais.Pais= viewRow.Cells["Pais"].Value.ToString()!;
-                
+                if (dgvpaises.SelectedRows.Count >= 0)
+                {
+                    var result = MessageBox.Show("¿Estás seguro de que quieres eliminar este país?", "Confirmación", MessageBoxButtons.YesNo);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        bool eliminarpais = await paisController.DetelePais(dgvpaises.CurrentRow.Cells[0].Value.ToString()!,
+                            dgvpaises.CurrentRow.Cells[1].Value.ToString()!);
+
+                        if (eliminarpais)
+                        {
+                            await cargarDatos();
+                            MessageBox.Show("Se eliminó el registro");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error al eliminar registro");
+                        }
+                    }
+                }
             }
+            catch (Exception ext)
+            {
+                MessageBox.Show(ext.Message);
+            }
+        }
+
+
+        private async void toolStripTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            var filtracionpais = await paisController.GetPaises();
+            filtracionpais = filtracionpais.FindAll(pais => pais.IdPais.ToUpper().Contains(filtrarpais.Text.ToUpper())
+            || pais.Pais.ToUpper().Contains(filtrarpais.Text.ToUpper()));
+            dgvpaises.DataSource = filtracionpais;
         }
     }
 }

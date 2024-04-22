@@ -37,7 +37,7 @@
             editarpais = new ToolStripButton();
             toolStripSeparator3 = new ToolStripSeparator();
             eliminarpais = new ToolStripButton();
-            toolStripTextBox1 = new ToolStripTextBox();
+            filtrarpais = new ToolStripTextBox();
             toolStripSeparator6 = new ToolStripSeparator();
             toolStripLabel1 = new ToolStripLabel();
             actualizarpaises = new ToolStripButton();
@@ -54,7 +54,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, agregarpais, toolStripSeparator2, editarpais, toolStripSeparator3, eliminarpais, toolStripTextBox1, toolStripSeparator6, toolStripLabel1, actualizarpaises, toolStripSeparator5, toolStripSeparator4 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, agregarpais, toolStripSeparator2, editarpais, toolStripSeparator3, eliminarpais, filtrarpais, toolStripSeparator6, toolStripLabel1, actualizarpaises, toolStripSeparator5, toolStripSeparator4 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(484, 25);
@@ -101,13 +101,15 @@
             eliminarpais.Name = "eliminarpais";
             eliminarpais.Size = new Size(70, 22);
             eliminarpais.Text = "Eliminar";
+            eliminarpais.Click += eliminarpais_Click;
             // 
-            // toolStripTextBox1
+            // filtrarpais
             // 
-            toolStripTextBox1.Alignment = ToolStripItemAlignment.Right;
-            toolStripTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 25);
+            filtrarpais.Alignment = ToolStripItemAlignment.Right;
+            filtrarpais.BorderStyle = BorderStyle.FixedSingle;
+            filtrarpais.Name = "filtrarpais";
+            filtrarpais.Size = new Size(100, 25);
+            filtrarpais.TextChanged += toolStripTextBox1_TextChanged;
             // 
             // toolStripSeparator6
             // 
@@ -152,7 +154,6 @@
             dgvpaises.Name = "dgvpaises";
             dgvpaises.Size = new Size(484, 384);
             dgvpaises.TabIndex = 1;
-            dgvpaises.SelectionChanged += dgvpaises_SelectionChanged;
             // 
             // idPaisDataGridViewTextBoxColumn
             // 
@@ -194,7 +195,7 @@
         private ToolStripButton editarpais;
         private ToolStripButton eliminarpais;
         private ToolStripLabel toolStripLabel1;
-        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripTextBox filtrarpais;
         private DataGridView dgvpaises;
         private BindingSource paiseBindingSource;
         private DataGridViewTextBoxColumn idPaisDataGridViewTextBoxColumn;
