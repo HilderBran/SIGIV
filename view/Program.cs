@@ -1,6 +1,7 @@
 using Controller;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using view.Pais;
 
 namespace view
 {
@@ -22,6 +23,10 @@ namespace view
                 services.AddSingleton<Login>();
                 services.AddSingleton<dashBoard>();
                 services.AddSingleton<LoginController>(); 
+                services.AddSingleton<GestionPais>();
+                services.AddScoped<AgregarPais>();
+                services.AddSingleton<PaisController>();
+                
             });
 
             var host = build.Build(); 
