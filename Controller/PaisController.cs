@@ -101,6 +101,16 @@ namespace Controller
             }
             return bandera;
         }
+
+        public async static Task<List<Paise>> Paises()
+        {
+            List<Paise> paises = new List<Paise>();
+            using (SigivContext db = new SigivContext())
+            {
+                paises = await db.Paises.ToListAsync();
+            }
+            return paises;
+        }
     }
 
 

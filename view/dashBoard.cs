@@ -25,5 +25,23 @@ namespace view
         {
             this.gestionPais.ShowDialog();
         }
+
+        private void municipiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Municipios.GestionMunicipios gestionMunicipios = new view.Municipios.GestionMunicipios();
+            gestionMunicipios.ShowDialog();
+        }
+
+        private void departamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Departamentos.GestionDepartamento gestionDepartamento = new view.Departamentos.GestionDepartamento();
+            gestionDepartamento.ShowDialog();
+        }
+
+        private void distritosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Distritos.GestionDistritos gestionDistritos = new view.Distritos.GestionDistritos();
+            gestionDistritos.ShowDialog();
+        }
     }
 }

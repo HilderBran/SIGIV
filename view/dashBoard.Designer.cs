@@ -53,6 +53,7 @@
             categoriasToolStripMenuItem = new ToolStripMenuItem();
             ventaToolStripMenuItem = new ToolStripMenuItem();
             generarVentaToolStripMenuItem = new ToolStripMenuItem();
+            empleadosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             // 
             // empleadoToolStripMenuItem
             // 
-            empleadoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargosToolStripMenuItem });
+            empleadoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargosToolStripMenuItem, empleadosToolStripMenuItem });
             empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
             empleadoToolStripMenuItem.Size = new Size(180, 22);
             empleadoToolStripMenuItem.Text = "Empleado";
@@ -82,7 +83,7 @@
             // cargosToolStripMenuItem
             // 
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            cargosToolStripMenuItem.Size = new Size(111, 22);
+            cargosToolStripMenuItem.Size = new Size(180, 22);
             cargosToolStripMenuItem.Text = "Cargos";
             // 
             // clientesToolStripMenuItem
@@ -120,27 +121,30 @@
             // paisesToolStripMenuItem
             // 
             paisesToolStripMenuItem.Name = "paisesToolStripMenuItem";
-            paisesToolStripMenuItem.Size = new Size(180, 22);
+            paisesToolStripMenuItem.Size = new Size(155, 22);
             paisesToolStripMenuItem.Text = "Paises";
             paisesToolStripMenuItem.Click += paisesToolStripMenuItem_Click;
             // 
             // departamentosToolStripMenuItem
             // 
             departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
-            departamentosToolStripMenuItem.Size = new Size(180, 22);
+            departamentosToolStripMenuItem.Size = new Size(155, 22);
             departamentosToolStripMenuItem.Text = "Departamentos";
+            departamentosToolStripMenuItem.Click += departamentosToolStripMenuItem_Click;
             // 
             // municipiosToolStripMenuItem
             // 
             municipiosToolStripMenuItem.Name = "municipiosToolStripMenuItem";
-            municipiosToolStripMenuItem.Size = new Size(180, 22);
+            municipiosToolStripMenuItem.Size = new Size(155, 22);
             municipiosToolStripMenuItem.Text = "Municipios";
+            municipiosToolStripMenuItem.Click += municipiosToolStripMenuItem_Click;
             // 
             // distritosToolStripMenuItem
             // 
             distritosToolStripMenuItem.Name = "distritosToolStripMenuItem";
-            distritosToolStripMenuItem.Size = new Size(180, 22);
+            distritosToolStripMenuItem.Size = new Size(155, 22);
             distritosToolStripMenuItem.Text = "Distritos";
+            distritosToolStripMenuItem.Click += distritosToolStripMenuItem_Click;
             // 
             // usuariosToolStripMenuItem
             // 
@@ -219,6 +223,12 @@
             generarVentaToolStripMenuItem.Size = new Size(147, 22);
             generarVentaToolStripMenuItem.Text = "Generar venta";
             // 
+            // empleadosToolStripMenuItem
+            // 
+            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            empleadosToolStripMenuItem.Size = new Size(180, 22);
+            empleadosToolStripMenuItem.Text = "Empleados";
+            // 
             // dashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -261,5 +271,6 @@
         private ToolStripMenuItem categoriasToolStripMenuItem;
         private ToolStripMenuItem ventaToolStripMenuItem;
         private ToolStripMenuItem generarVentaToolStripMenuItem;
+        private ToolStripMenuItem empleadosToolStripMenuItem;
     }
 }

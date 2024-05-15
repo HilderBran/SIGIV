@@ -1,6 +1,6 @@
-﻿namespace view.Municipios
+﻿namespace view.Departamentos
 {
-    partial class AgregarMunicipios
+    partial class AgregarDepartamentos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,65 +29,67 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txbIdMunicipio = new TextBox();
-            txbMunicipio = new TextBox();
             label2 = new Label();
             label3 = new Label();
+            txbIdDepartamento = new TextBox();
+            txbDepartamento = new TextBox();
+            cbbIdPais = new ComboBox();
             btnGuardar = new Button();
             btnCancelar = new Button();
-            cbbIdDepartamento = new ComboBox();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(159, 30);
+            label1.Location = new Point(287, 63);
             label1.Name = "label1";
-            label1.Size = new Size(71, 15);
+            label1.Size = new Size(100, 23);
             label1.TabIndex = 0;
-            label1.Text = "IdMunicipio";
-            // 
-            // txbIdMunicipio
-            // 
-            txbIdMunicipio.Location = new Point(159, 47);
-            txbIdMunicipio.Margin = new Padding(3, 2, 3, 2);
-            txbIdMunicipio.Name = "txbIdMunicipio";
-            txbIdMunicipio.Size = new Size(110, 23);
-            txbIdMunicipio.TabIndex = 1;
-            // 
-            // txbMunicipio
-            // 
-            txbMunicipio.Location = new Point(159, 114);
-            txbMunicipio.Margin = new Padding(3, 2, 3, 2);
-            txbMunicipio.Name = "txbMunicipio";
-            txbMunicipio.Size = new Size(110, 23);
-            txbMunicipio.TabIndex = 3;
+            label1.Text = "IdDepertamento";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(159, 97);
+            label2.Location = new Point(287, 253);
             label2.Name = "label2";
-            label2.Size = new Size(61, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Municipio";
+            label2.Size = new Size(100, 24);
+            label2.TabIndex = 1;
+            label2.Text = "IdPais";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(159, 158);
+            label3.Location = new Point(289, 145);
             label3.Name = "label3";
-            label3.Size = new Size(93, 15);
-            label3.TabIndex = 4;
-            label3.Text = "IdDepartamento";
+            label3.Size = new Size(98, 26);
+            label3.TabIndex = 2;
+            label3.Text = "Departamento";
+            // 
+            // txbIdDepartamento
+            // 
+            txbIdDepartamento.Location = new Point(287, 89);
+            txbIdDepartamento.Name = "txbIdDepartamento";
+            txbIdDepartamento.Size = new Size(100, 23);
+            txbIdDepartamento.TabIndex = 3;
+            // 
+            // txbDepartamento
+            // 
+            txbDepartamento.Location = new Point(287, 183);
+            txbDepartamento.Name = "txbDepartamento";
+            txbDepartamento.Size = new Size(100, 23);
+            txbDepartamento.TabIndex = 4;
+            // 
+            // cbbIdPais
+            // 
+            cbbIdPais.FormattingEnabled = true;
+            cbbIdPais.Location = new Point(287, 280);
+            cbbIdPais.Name = "cbbIdPais";
+            cbbIdPais.Size = new Size(100, 23);
+            cbbIdPais.TabIndex = 5;
             // 
             // btnGuardar
             // 
             btnGuardar.DialogResult = DialogResult.OK;
-            btnGuardar.Location = new Point(66, 246);
-            btnGuardar.Margin = new Padding(3, 2, 3, 2);
+            btnGuardar.Location = new Point(211, 335);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(82, 22);
+            btnGuardar.Size = new Size(75, 23);
             btnGuardar.TabIndex = 6;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -96,39 +98,29 @@
             // btnCancelar
             // 
             btnCancelar.DialogResult = DialogResult.Cancel;
-            btnCancelar.Location = new Point(288, 246);
-            btnCancelar.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar.Location = new Point(396, 335);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(82, 22);
+            btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // cbbIdDepartamento
-            // 
-            cbbIdDepartamento.FormattingEnabled = true;
-            cbbIdDepartamento.Location = new Point(159, 187);
-            cbbIdDepartamento.Name = "cbbIdDepartamento";
-            cbbIdDepartamento.Size = new Size(110, 23);
-            cbbIdDepartamento.TabIndex = 8;
-            // 
-            // AgregarMunicipios
+            // AgregarDepartamentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(473, 301);
-            Controls.Add(cbbIdDepartamento);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
+            Controls.Add(cbbIdPais);
+            Controls.Add(txbDepartamento);
+            Controls.Add(txbIdDepartamento);
             Controls.Add(label3);
-            Controls.Add(txbMunicipio);
             Controls.Add(label2);
-            Controls.Add(txbIdMunicipio);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "AgregarMunicipios";
-            Text = "Agregar Municipios";
+            Name = "AgregarDepartamentos";
+            Text = "AgregarDepartamentos";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,12 +128,12 @@
         #endregion
 
         private Label label1;
-        private TextBox txbIdMunicipio;
-        private TextBox txbMunicipio;
         private Label label2;
         private Label label3;
+        private TextBox txbIdDepartamento;
+        private TextBox txbDepartamento;
+        private ComboBox cbbIdPais;
         private Button btnGuardar;
         private Button btnCancelar;
-        private ComboBox cbbIdDepartamento;
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace view.Municipios
+﻿namespace view.Cargos
 {
-    partial class GestionMunicipios
+    partial class GestionCargos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionMunicipios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionCargos));
+            dgvCargos = new DataGridView();
             toolStrip1 = new ToolStrip();
             toolStripSeparator1 = new ToolStripSeparator();
             btnAgregar = new ToolStripButton();
@@ -38,24 +39,29 @@
             btnEliminar = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             txbFiltrar = new ToolStripTextBox();
-            btnFiltrar = new ToolStripButton();
-            dgvMunicipios = new DataGridView();
-            statusStrip1 = new StatusStrip();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
-            toolStripProgressBar1 = new ToolStripProgressBar();
+            ((System.ComponentModel.ISupportInitialize)dgvCargos).BeginInit();
             toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvMunicipios).BeginInit();
-            statusStrip1.SuspendLayout();
             SuspendLayout();
+            // 
+            // dgvCargos
+            // 
+            dgvCargos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCargos.Dock = DockStyle.Fill;
+            dgvCargos.Location = new Point(0, 27);
+            dgvCargos.Margin = new Padding(3, 2, 3, 2);
+            dgvCargos.Name = "dgvCargos";
+            dgvCargos.RowHeadersWidth = 51;
+            dgvCargos.Size = new Size(800, 423);
+            dgvCargos.TabIndex = 5;
             // 
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnAgregar, toolStripSeparator2, btnEditar, toolStripSeparator3, btnEliminar, toolStripSeparator4, txbFiltrar, btnFiltrar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnAgregar, toolStripSeparator2, btnEditar, toolStripSeparator3, btnEliminar, toolStripSeparator4, txbFiltrar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(700, 27);
-            toolStrip1.TabIndex = 0;
+            toolStrip1.Size = new Size(800, 27);
+            toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator1
@@ -108,74 +114,30 @@
             // txbFiltrar
             // 
             txbFiltrar.Alignment = ToolStripItemAlignment.Right;
+            txbFiltrar.BorderStyle = BorderStyle.FixedSingle;
             txbFiltrar.Name = "txbFiltrar";
             txbFiltrar.Size = new Size(88, 27);
             txbFiltrar.TextChanged += txbFiltrar_TextChanged;
             // 
-            // btnFiltrar
-            // 
-            btnFiltrar.Alignment = ToolStripItemAlignment.Right;
-            btnFiltrar.Image = (Image)resources.GetObject("btnFiltrar.Image");
-            btnFiltrar.ImageTransparentColor = Color.Magenta;
-            btnFiltrar.Name = "btnFiltrar";
-            btnFiltrar.Size = new Size(61, 24);
-            btnFiltrar.Text = "Filtrar";
-            // 
-            // dgvMunicipios
-            // 
-            dgvMunicipios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMunicipios.Dock = DockStyle.Fill;
-            dgvMunicipios.Location = new Point(0, 27);
-            dgvMunicipios.Margin = new Padding(3, 2, 3, 2);
-            dgvMunicipios.Name = "dgvMunicipios";
-            dgvMunicipios.RowHeadersWidth = 51;
-            dgvMunicipios.Size = new Size(700, 311);
-            dgvMunicipios.TabIndex = 1;
-            // 
-            // statusStrip1
-            // 
-            statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripProgressBar1 });
-            statusStrip1.Location = new Point(0, 316);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 12, 0);
-            statusStrip1.Size = new Size(700, 22);
-            statusStrip1.TabIndex = 2;
-            statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(58, 17);
-            toolStripStatusLabel1.Text = "Cantidad ";
-            // 
-            // toolStripProgressBar1
-            // 
-            toolStripProgressBar1.Name = "toolStripProgressBar1";
-            toolStripProgressBar1.Size = new Size(88, 16);
-            // 
-            // GestionMunicipios
+            // GestionCargos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
-            Controls.Add(statusStrip1);
-            Controls.Add(dgvMunicipios);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgvCargos);
             Controls.Add(toolStrip1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "GestionMunicipios";
-            Text = "GestionMunicipios";
+            Name = "GestionCargos";
+            Text = "GestionCargos";
+            ((System.ComponentModel.ISupportInitialize)dgvCargos).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvMunicipios).EndInit();
-            statusStrip1.ResumeLayout(false);
-            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private DataGridView dgvCargos;
         private ToolStrip toolStrip1;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton btnAgregar;
@@ -185,10 +147,5 @@
         private ToolStripButton btnEliminar;
         private ToolStripSeparator toolStripSeparator4;
         private ToolStripTextBox txbFiltrar;
-        private ToolStripButton btnFiltrar;
-        private DataGridView dgvMunicipios;
-        private StatusStrip statusStrip1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
-        private ToolStripProgressBar toolStripProgressBar1;
     }
 }
