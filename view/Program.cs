@@ -1,5 +1,7 @@
+using Controller;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using view.Pais;
 
 namespace view
 {
@@ -18,14 +20,20 @@ namespace view
             Application.SetCompatibleTextRenderingDefault(false);
 
             var build = new HostBuilder().ConfigureServices((hostContext, services) => { 
-                services.AddSingleton<Form1>();
+                services.AddSingleton<Login>();
+                services.AddSingleton<dashBoard>();
+                services.AddSingleton<LoginController>(); 
+                services.AddSingleton<GestionPais>();
+                services.AddScoped<AgregarPais>();
+                services.AddSingleton<PaisController>();
+                
             });
 
             var host = build.Build(); 
 
             using (var serviceScope = host.Services.CreateScope()) {
-                var form = serviceScope.ServiceProvider.GetService<Form1>();
-                Application.Run(form!);
+                var login = serviceScope.ServiceProvider.GetService<Login>();
+                Application.Run(login!);
             }
 
 
