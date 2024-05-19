@@ -39,7 +39,7 @@
             btnEliminar = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             txbFiltrar = new ToolStripTextBox();
-            btnFiltrar = new ToolStripButton();
+            btnFiltrar = new ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)dgvDistritos).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -129,7 +129,7 @@
             btnFiltrar.Image = (Image)resources.GetObject("btnFiltrar.Image");
             btnFiltrar.ImageTransparentColor = Color.Magenta;
             btnFiltrar.Name = "btnFiltrar";
-            btnFiltrar.Size = new Size(61, 24);
+            btnFiltrar.Size = new Size(57, 24);
             btnFiltrar.Text = "Filtrar";
             // 
             // GestionDistritos
@@ -160,6 +160,6 @@
         private ToolStripButton btnEliminar;
         private ToolStripSeparator toolStripSeparator4;
         private ToolStripTextBox txbFiltrar;
-        private ToolStripButton btnFiltrar;
+        private ToolStripLabel btnFiltrar;
     }
 }

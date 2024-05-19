@@ -35,13 +35,14 @@
             tsbEliminar = new ToolStripButton();
             tstbFiltrar = new ToolStripTextBox();
             dgvDepartamentos = new DataGridView();
+            toolStripLabel1 = new ToolStripLabel();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDepartamentos).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { tsbAgregar, stbEditar, tsbEliminar, tstbFiltrar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { tsbAgregar, stbEditar, tsbEliminar, tstbFiltrar, toolStripLabel1 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(800, 25);
@@ -95,6 +96,13 @@
             dgvDepartamentos.Size = new Size(800, 425);
             dgvDepartamentos.TabIndex = 1;
             // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Alignment = ToolStripItemAlignment.Right;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(37, 22);
+            toolStripLabel1.Text = "Filtrar";
+            // 
             // GestionDepartamento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,5 +127,6 @@
         private ToolStripButton tsbEliminar;
         private ToolStripTextBox tstbFiltrar;
         private DataGridView dgvDepartamentos;
+        private ToolStripLabel toolStripLabel1;
     }
 }

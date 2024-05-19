@@ -42,9 +42,9 @@
             toolStripLabel1 = new ToolStripLabel();
             toolStripSeparator4 = new ToolStripSeparator();
             dgvpaises = new DataGridView();
-            idPaisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            paisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             paiseBindingSource = new BindingSource(components);
+            paisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idPaisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvpaises).BeginInit();
             ((System.ComponentModel.ISupportInitialize)paiseBindingSource).BeginInit();
@@ -144,14 +144,9 @@
             dgvpaises.Size = new Size(522, 382);
             dgvpaises.TabIndex = 1;
             // 
-            // idPaisDataGridViewTextBoxColumn
+            // paiseBindingSource
             // 
-            idPaisDataGridViewTextBoxColumn.DataPropertyName = "IdPais";
-            idPaisDataGridViewTextBoxColumn.HeaderText = "IdPais";
-            idPaisDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idPaisDataGridViewTextBoxColumn.Name = "idPaisDataGridViewTextBoxColumn";
-            idPaisDataGridViewTextBoxColumn.ReadOnly = true;
-            idPaisDataGridViewTextBoxColumn.Width = 125;
+            paiseBindingSource.DataSource = typeof(Models.Entities.Paise);
             // 
             // paisDataGridViewTextBoxColumn
             // 
@@ -162,9 +157,14 @@
             paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
             paisDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // paiseBindingSource
+            // idPaisDataGridViewTextBoxColumn
             // 
-            paiseBindingSource.DataSource = typeof(Models.Entities.Paise);
+            idPaisDataGridViewTextBoxColumn.DataPropertyName = "IdPais";
+            idPaisDataGridViewTextBoxColumn.HeaderText = "IdPais";
+            idPaisDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idPaisDataGridViewTextBoxColumn.Name = "idPaisDataGridViewTextBoxColumn";
+            idPaisDataGridViewTextBoxColumn.ReadOnly = true;
+            idPaisDataGridViewTextBoxColumn.Width = 125;
             // 
             // GestionPais
             // 
