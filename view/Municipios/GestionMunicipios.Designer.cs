@@ -123,11 +123,14 @@
             // 
             // dgvMunicipios
             // 
+            dgvMunicipios.AllowUserToAddRows = false;
+            dgvMunicipios.AllowUserToDeleteRows = false;
             dgvMunicipios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMunicipios.Dock = DockStyle.Fill;
             dgvMunicipios.Location = new Point(0, 27);
             dgvMunicipios.Margin = new Padding(3, 2, 3, 2);
             dgvMunicipios.Name = "dgvMunicipios";
+            dgvMunicipios.ReadOnly = true;
             dgvMunicipios.RowHeadersWidth = 51;
             dgvMunicipios.Size = new Size(700, 311);
             dgvMunicipios.TabIndex = 1;

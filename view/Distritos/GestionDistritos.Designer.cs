@@ -46,11 +46,14 @@
             // 
             // dgvDistritos
             // 
+            dgvDistritos.AllowUserToAddRows = false;
+            dgvDistritos.AllowUserToDeleteRows = false;
             dgvDistritos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDistritos.Dock = DockStyle.Fill;
             dgvDistritos.Location = new Point(0, 27);
             dgvDistritos.Margin = new Padding(3, 2, 3, 2);
             dgvDistritos.Name = "dgvDistritos";
+            dgvDistritos.ReadOnly = true;
             dgvDistritos.RowHeadersWidth = 51;
             dgvDistritos.Size = new Size(800, 423);
             dgvDistritos.TabIndex = 3;

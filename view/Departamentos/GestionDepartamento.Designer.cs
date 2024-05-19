@@ -85,10 +85,13 @@
             // 
             // dgvDepartamentos
             // 
+            dgvDepartamentos.AllowUserToAddRows = false;
+            dgvDepartamentos.AllowUserToDeleteRows = false;
             dgvDepartamentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDepartamentos.Dock = DockStyle.Fill;
             dgvDepartamentos.Location = new Point(0, 25);
             dgvDepartamentos.Name = "dgvDepartamentos";
+            dgvDepartamentos.ReadOnly = true;
             dgvDepartamentos.Size = new Size(800, 425);
             dgvDepartamentos.TabIndex = 1;
             // 

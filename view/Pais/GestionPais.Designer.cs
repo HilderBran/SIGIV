@@ -40,8 +40,6 @@
             filtrarpais = new ToolStripTextBox();
             toolStripSeparator6 = new ToolStripSeparator();
             toolStripLabel1 = new ToolStripLabel();
-            actualizarpaises = new ToolStripButton();
-            toolStripSeparator5 = new ToolStripSeparator();
             toolStripSeparator4 = new ToolStripSeparator();
             dgvpaises = new DataGridView();
             idPaisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -55,10 +53,10 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, agregarpais, toolStripSeparator2, editarpais, toolStripSeparator3, eliminarpais, filtrarpais, toolStripSeparator6, toolStripLabel1, actualizarpaises, toolStripSeparator5, toolStripSeparator4 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, agregarpais, toolStripSeparator2, editarpais, toolStripSeparator3, eliminarpais, filtrarpais, toolStripSeparator6, toolStripLabel1, toolStripSeparator4 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(596, 27);
+            toolStrip1.Size = new Size(522, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -72,7 +70,7 @@
             agregarpais.Image = (Image)resources.GetObject("agregarpais.Image");
             agregarpais.ImageTransparentColor = Color.Magenta;
             agregarpais.Name = "agregarpais";
-            agregarpais.Size = new Size(87, 24);
+            agregarpais.Size = new Size(73, 24);
             agregarpais.Text = "Agregar";
             agregarpais.Click += agregarpais_Click;
             // 
@@ -86,7 +84,7 @@
             editarpais.Image = (Image)resources.GetObject("editarpais.Image");
             editarpais.ImageTransparentColor = Color.Magenta;
             editarpais.Name = "editarpais";
-            editarpais.Size = new Size(72, 24);
+            editarpais.Size = new Size(61, 24);
             editarpais.Text = "Editar";
             editarpais.Click += editarpais_Click;
             // 
@@ -100,7 +98,7 @@
             eliminarpais.Image = (Image)resources.GetObject("eliminarpais.Image");
             eliminarpais.ImageTransparentColor = Color.Magenta;
             eliminarpais.Name = "eliminarpais";
-            eliminarpais.Size = new Size(87, 24);
+            eliminarpais.Size = new Size(74, 24);
             eliminarpais.Text = "Eliminar";
             eliminarpais.Click += eliminarpais_Click;
             // 
@@ -109,7 +107,7 @@
             filtrarpais.Alignment = ToolStripItemAlignment.Right;
             filtrarpais.BorderStyle = BorderStyle.FixedSingle;
             filtrarpais.Name = "filtrarpais";
-            filtrarpais.Size = new Size(114, 27);
+            filtrarpais.Size = new Size(100, 27);
             filtrarpais.TextChanged += toolStripTextBox1_TextChanged;
             // 
             // toolStripSeparator6
@@ -121,22 +119,8 @@
             // 
             toolStripLabel1.Alignment = ToolStripItemAlignment.Right;
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(47, 24);
+            toolStripLabel1.Size = new Size(37, 24);
             toolStripLabel1.Text = "Filtrar";
-            // 
-            // actualizarpaises
-            // 
-            actualizarpaises.Image = (Image)resources.GetObject("actualizarpaises.Image");
-            actualizarpaises.ImageTransparentColor = Color.Magenta;
-            actualizarpaises.Name = "actualizarpaises";
-            actualizarpaises.Size = new Size(99, 24);
-            actualizarpaises.Text = "Actualizar";
-            actualizarpaises.Click += actualizarpaises_Click;
-            // 
-            // toolStripSeparator5
-            // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(6, 27);
             // 
             // toolStripSeparator4
             // 
@@ -146,16 +130,18 @@
             // 
             // dgvpaises
             // 
+            dgvpaises.AllowUserToAddRows = false;
+            dgvpaises.AllowUserToDeleteRows = false;
             dgvpaises.AutoGenerateColumns = false;
             dgvpaises.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvpaises.Columns.AddRange(new DataGridViewColumn[] { idPaisDataGridViewTextBoxColumn, paisDataGridViewTextBoxColumn });
             dgvpaises.DataSource = paiseBindingSource;
             dgvpaises.Dock = DockStyle.Fill;
             dgvpaises.Location = new Point(0, 27);
-            dgvpaises.Margin = new Padding(3, 4, 3, 4);
             dgvpaises.Name = "dgvpaises";
+            dgvpaises.ReadOnly = true;
             dgvpaises.RowHeadersWidth = 51;
-            dgvpaises.Size = new Size(596, 518);
+            dgvpaises.Size = new Size(522, 382);
             dgvpaises.TabIndex = 1;
             // 
             // idPaisDataGridViewTextBoxColumn
@@ -164,15 +150,17 @@
             idPaisDataGridViewTextBoxColumn.HeaderText = "IdPais";
             idPaisDataGridViewTextBoxColumn.MinimumWidth = 6;
             idPaisDataGridViewTextBoxColumn.Name = "idPaisDataGridViewTextBoxColumn";
+            idPaisDataGridViewTextBoxColumn.ReadOnly = true;
             idPaisDataGridViewTextBoxColumn.Width = 125;
             // 
             // paisDataGridViewTextBoxColumn
             // 
+            paisDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             paisDataGridViewTextBoxColumn.DataPropertyName = "Pais";
             paisDataGridViewTextBoxColumn.HeaderText = "Pais";
             paisDataGridViewTextBoxColumn.MinimumWidth = 6;
             paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
-            paisDataGridViewTextBoxColumn.Width = 125;
+            paisDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // paiseBindingSource
             // 
@@ -180,12 +168,11 @@
             // 
             // GestionPais
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(596, 545);
+            ClientSize = new Size(522, 409);
             Controls.Add(dgvpaises);
             Controls.Add(toolStrip1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "GestionPais";
             Text = "GestionPais";
             toolStrip1.ResumeLayout(false);
@@ -206,14 +193,12 @@
         private ToolStripTextBox filtrarpais;
         private DataGridView dgvpaises;
         private BindingSource paiseBindingSource;
-        private DataGridViewTextBoxColumn idPaisDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
-        private ToolStripButton actualizarpaises;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripSeparator toolStripSeparator6;
-        private ToolStripSeparator toolStripSeparator5;
         private ToolStripSeparator toolStripSeparator4;
+        private DataGridViewTextBoxColumn idPaisDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
     }
 }

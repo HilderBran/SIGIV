@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using view.Municipios;
 
 namespace view.Pais
 {
@@ -35,16 +36,19 @@ namespace view.Pais
             base.OnLoad(e);
         }
 
-        private void agregarpais_Click(object sender, EventArgs e)
+        private async void agregarpais_Click(object sender, EventArgs e)
         {
             AgregarPais.editarpais = null!;
             this.agregarPais.ShowDialog();
-        }
-
-        private async void actualizarpaises_Click(object sender, EventArgs e)
-        {
-
             await cargarDatos();
+
+            /*AgregarPais agregarPais = new AgregarPais();
+            var result = agregarPais.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("Pais agregado", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await cargarDatos();
+            }*/
         }
 
         private void editarpais_Click(object sender, EventArgs e)

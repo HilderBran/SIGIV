@@ -45,11 +45,14 @@
             // 
             // dgvCargos
             // 
+            dgvCargos.AllowUserToAddRows = false;
+            dgvCargos.AllowUserToDeleteRows = false;
             dgvCargos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCargos.Dock = DockStyle.Fill;
             dgvCargos.Location = new Point(0, 27);
             dgvCargos.Margin = new Padding(3, 2, 3, 2);
             dgvCargos.Name = "dgvCargos";
+            dgvCargos.ReadOnly = true;
             dgvCargos.RowHeadersWidth = 51;
             dgvCargos.Size = new Size(800, 423);
             dgvCargos.TabIndex = 5;
