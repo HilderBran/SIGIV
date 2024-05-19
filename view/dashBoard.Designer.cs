@@ -32,6 +32,7 @@
             administraciónToolStripMenuItem = new ToolStripMenuItem();
             empleadoToolStripMenuItem = new ToolStripMenuItem();
             cargosToolStripMenuItem = new ToolStripMenuItem();
+            empleadosToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem1 = new ToolStripMenuItem();
@@ -53,7 +54,6 @@
             categoriasToolStripMenuItem = new ToolStripMenuItem();
             ventaToolStripMenuItem = new ToolStripMenuItem();
             generarVentaToolStripMenuItem = new ToolStripMenuItem();
-            empleadosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,26 +77,32 @@
             // 
             empleadoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargosToolStripMenuItem, empleadosToolStripMenuItem });
             empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            empleadoToolStripMenuItem.Size = new Size(180, 22);
+            empleadoToolStripMenuItem.Size = new Size(139, 22);
             empleadoToolStripMenuItem.Text = "Empleado";
             // 
             // cargosToolStripMenuItem
             // 
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            cargosToolStripMenuItem.Size = new Size(180, 22);
+            cargosToolStripMenuItem.Size = new Size(132, 22);
             cargosToolStripMenuItem.Text = "Cargos";
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            empleadosToolStripMenuItem.Size = new Size(132, 22);
+            empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // clientesToolStripMenuItem
             // 
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(180, 22);
+            clientesToolStripMenuItem.Size = new Size(139, 22);
             clientesToolStripMenuItem.Text = "Clientes";
             // 
             // proveedoresToolStripMenuItem
             // 
             proveedoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { proveedoresToolStripMenuItem1, contactosToolStripMenuItem });
             proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            proveedoresToolStripMenuItem.Size = new Size(180, 22);
+            proveedoresToolStripMenuItem.Size = new Size(139, 22);
             proveedoresToolStripMenuItem.Text = "Proveedores";
             // 
             // proveedoresToolStripMenuItem1
@@ -115,7 +121,7 @@
             // 
             direccionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { paisesToolStripMenuItem, departamentosToolStripMenuItem, municipiosToolStripMenuItem, distritosToolStripMenuItem });
             direccionesToolStripMenuItem.Name = "direccionesToolStripMenuItem";
-            direccionesToolStripMenuItem.Size = new Size(180, 22);
+            direccionesToolStripMenuItem.Size = new Size(139, 22);
             direccionesToolStripMenuItem.Text = "Direcciones";
             // 
             // paisesToolStripMenuItem
@@ -150,7 +156,7 @@
             // 
             usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ususariosToolStripMenuItem });
             usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(180, 22);
+            usuariosToolStripMenuItem.Size = new Size(139, 22);
             usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // ususariosToolStripMenuItem
@@ -223,12 +229,6 @@
             generarVentaToolStripMenuItem.Size = new Size(147, 22);
             generarVentaToolStripMenuItem.Text = "Generar venta";
             // 
-            // empleadosToolStripMenuItem
-            // 
-            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(180, 22);
-            empleadosToolStripMenuItem.Text = "Empleados";
-            // 
             // dashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -238,6 +238,7 @@
             MainMenuStrip = menuStrip1;
             Name = "dashBoard";
             Text = "dashBoard";
+            WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

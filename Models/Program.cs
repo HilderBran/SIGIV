@@ -1,6 +1,4 @@
-﻿using Models.Entities;
-
-internal class Program
+﻿internal class Program
 {
     private static void Main(string[] args)
     {
