@@ -28,6 +28,18 @@ namespace Controller
             }
             return departamentos;
         }
+        public async static Task<List<DepartamentoController>> GetDepartamentosByIdPais(string id)
+        {
+            List<DepartamentoController> departamentos = new List<DepartamentoController>();
+            using (Models.Entities.SigivContext db = new Models.Entities.SigivContext())
+            {
+                departamentos = await db.Departamentos.Include(d => d.IdPaisNavigation)
+                    .Where(d => d.IdPais == id)
+                    .Select(d => ConvertToController(d))
+                    .ToListAsync();
+            }
+            return departamentos;
+        }
 
         public static DepartamentoController ConvertToController(Models.Entities.Departamento departamento)
         {

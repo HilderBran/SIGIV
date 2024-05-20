@@ -92,12 +92,14 @@
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             empleadosToolStripMenuItem.Size = new Size(180, 22);
             empleadosToolStripMenuItem.Text = "Empleados";
+            empleadosToolStripMenuItem.Click += empleadosToolStripMenuItem_Click;
             // 
             // clientesToolStripMenuItem
             // 
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(180, 22);
             clientesToolStripMenuItem.Text = "Clientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
             // proveedoresToolStripMenuItem
             // 

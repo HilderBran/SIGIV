@@ -80,6 +80,7 @@
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(73, 24);
             btnAgregar.Text = "Agregar";
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // toolStripSeparator2
             // 

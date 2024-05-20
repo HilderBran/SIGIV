@@ -49,5 +49,17 @@ namespace view
             view.Cargos.GestionCargos gestionCargos = new view.Cargos.GestionCargos();
             gestionCargos.ShowDialog();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Empleados.GestionEmpleados gestionEmpleados = new view.Empleados.GestionEmpleados();
+            gestionEmpleados.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Clientes.GestionClientes gestionClientes = new view.Clientes.GestionClientes();
+            gestionClientes.ShowDialog();
+        }
     }
 }
