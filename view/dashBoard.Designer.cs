@@ -77,32 +77,33 @@
             // 
             empleadoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargosToolStripMenuItem, empleadosToolStripMenuItem });
             empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            empleadoToolStripMenuItem.Size = new Size(139, 22);
+            empleadoToolStripMenuItem.Size = new Size(180, 22);
             empleadoToolStripMenuItem.Text = "Empleado";
             // 
             // cargosToolStripMenuItem
             // 
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            cargosToolStripMenuItem.Size = new Size(132, 22);
+            cargosToolStripMenuItem.Size = new Size(180, 22);
             cargosToolStripMenuItem.Text = "Cargos";
+            cargosToolStripMenuItem.Click += cargosToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(132, 22);
+            empleadosToolStripMenuItem.Size = new Size(180, 22);
             empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // clientesToolStripMenuItem
             // 
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(139, 22);
+            clientesToolStripMenuItem.Size = new Size(180, 22);
             clientesToolStripMenuItem.Text = "Clientes";
             // 
             // proveedoresToolStripMenuItem
             // 
             proveedoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { proveedoresToolStripMenuItem1, contactosToolStripMenuItem });
             proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            proveedoresToolStripMenuItem.Size = new Size(139, 22);
+            proveedoresToolStripMenuItem.Size = new Size(180, 22);
             proveedoresToolStripMenuItem.Text = "Proveedores";
             // 
             // proveedoresToolStripMenuItem1
@@ -121,7 +122,7 @@
             // 
             direccionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { paisesToolStripMenuItem, departamentosToolStripMenuItem, municipiosToolStripMenuItem, distritosToolStripMenuItem });
             direccionesToolStripMenuItem.Name = "direccionesToolStripMenuItem";
-            direccionesToolStripMenuItem.Size = new Size(139, 22);
+            direccionesToolStripMenuItem.Size = new Size(180, 22);
             direccionesToolStripMenuItem.Text = "Direcciones";
             // 
             // paisesToolStripMenuItem
@@ -156,7 +157,7 @@
             // 
             usuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ususariosToolStripMenuItem });
             usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            usuariosToolStripMenuItem.Size = new Size(139, 22);
+            usuariosToolStripMenuItem.Size = new Size(180, 22);
             usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // ususariosToolStripMenuItem

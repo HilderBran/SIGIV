@@ -43,5 +43,11 @@ namespace view
             view.Distritos.GestionDistritos gestionDistritos = new view.Distritos.GestionDistritos();
             gestionDistritos.ShowDialog();
         }
+
+        private void cargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view.Cargos.GestionCargos gestionCargos = new view.Cargos.GestionCargos();
+            gestionCargos.ShowDialog();
+        }
     }
 }
