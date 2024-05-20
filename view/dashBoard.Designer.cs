@@ -32,6 +32,7 @@
             administraciónToolStripMenuItem = new ToolStripMenuItem();
             empleadoToolStripMenuItem = new ToolStripMenuItem();
             cargosToolStripMenuItem = new ToolStripMenuItem();
+            empleadosToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem1 = new ToolStripMenuItem();
@@ -53,7 +54,6 @@
             categoriasToolStripMenuItem = new ToolStripMenuItem();
             ventaToolStripMenuItem = new ToolStripMenuItem();
             generarVentaToolStripMenuItem = new ToolStripMenuItem();
-            empleadosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,6 +85,13 @@
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
             cargosToolStripMenuItem.Size = new Size(180, 22);
             cargosToolStripMenuItem.Text = "Cargos";
+            cargosToolStripMenuItem.Click += cargosToolStripMenuItem_Click;
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            empleadosToolStripMenuItem.Size = new Size(180, 22);
+            empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // clientesToolStripMenuItem
             // 
@@ -222,12 +229,6 @@
             generarVentaToolStripMenuItem.Name = "generarVentaToolStripMenuItem";
             generarVentaToolStripMenuItem.Size = new Size(147, 22);
             generarVentaToolStripMenuItem.Text = "Generar venta";
-            // 
-            // empleadosToolStripMenuItem
-            // 
-            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(180, 22);
-            empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // dashBoard
             // 

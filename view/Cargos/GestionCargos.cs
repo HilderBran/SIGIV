@@ -25,7 +25,7 @@ namespace view.Cargos
             var result = agregarCargos.ShowDialog();
             if (result == DialogResult.OK)
             {
-                MessageBox.Show("Municipio agregado", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cargo agregado", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 await CargarCargos();
             }
         }

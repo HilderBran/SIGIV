@@ -64,8 +64,10 @@ namespace view.Cargos
         {
             try
             {
+                CargoController cargo = new CargoController();
                 cargo.Nombre = txbCargo.Text;
                 bool bandera = await cargo.AddCargo();
+
 
                 if (bandera)
                 {
