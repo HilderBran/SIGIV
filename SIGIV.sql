@@ -6,14 +6,14 @@ create table if not exists Paises(
     Pais varchar(60) not null
 );
 create table if not exists Departamentos(
-	idDepartamento char(2) primary key,
+	idDepartamento char(3) primary key,
     Departamento varchar(60) not null,
     idPais char(3) not null
 );
 create table if not exists Municipios(
 	idMunicipio char(3) primary key,
 	Municipio varchar(60) not null,
-	idDepartamento char(2) not null
+	idDepartamento char(3) not null
 );
 create table if not exists Distritos(
 	idDistrito varchar(5) primary key,

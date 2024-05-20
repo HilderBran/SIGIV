@@ -117,5 +117,10 @@ namespace view.Municipios
         {
             Close();
         }
+
+        private void AgregarMunicipios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -129,6 +129,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "AgregarMunicipios";
             Text = "Agregar Municipios";
+            Load += AgregarMunicipios_Load;
             ResumeLayout(false);
             PerformLayout();
         }
