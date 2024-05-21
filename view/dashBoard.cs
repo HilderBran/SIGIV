@@ -44,10 +44,10 @@ namespace view
             gestionDistritos.ShowDialog();
         }
 
-        private void cargosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            view.Cargos.GestionCargos gestionCargos = new view.Cargos.GestionCargos();
-            gestionCargos.ShowDialog();
+            view.Clientes.GestionClientes gestionClientes = new view.Clientes.GestionClientes();
+            gestionClientes.ShowDialog();
         }
     }
 }

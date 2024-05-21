@@ -36,3 +36,37 @@
 			Pedidos
 			detallesPedidos
 			productosNuevos
+
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+
+Pantallas
+	- Administracion
+		--Empleados(Hilder)
+			--Empleados
+			--Cargos
+		--Clientes(Tespan)
+		--Proveedores(Raul)
+			--Proveedores
+			--Contactos
+		--Direcciones
+			--Paises(Tespan)
+			--Departamentos(Hilder)
+			--Municipios(Tespan)
+			--Distritos(Raul)
+		--Usuarios
+			--Usuarios(Hilder)
+			--Roles
+			--Opciones
+	-Productos
+		--Pedidos(Tespan)
+		--Productos no registrados(Raul)
+		--Productos
+			--Productos
+			--Stock
+			--Categorias
+	-Ventas
+		--Venta
+			

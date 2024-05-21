@@ -26,7 +26,7 @@ namespace view
 
         }
 
-        private async void button1_Click(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e) {
             try {
                 // await controller.Loggin(txtUsuario.Text, txtContraseña.Text
                 if (true) {

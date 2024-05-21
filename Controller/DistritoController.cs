@@ -89,7 +89,8 @@ namespace Controller
 
             using (SigivContext context = new SigivContext())
             {
-                distritos = await context.Distritos.Where(distrito
+                distritos = await context.Distritos.Include(distrito 
+                            => distrito.IdMunicipioNavigation).Where(distrito
                             => distrito.IdMunicipio == IdMunicipio).Select(distrito
                             => ConvertToController(distrito)).ToListAsync();
             }

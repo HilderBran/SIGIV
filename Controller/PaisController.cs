@@ -78,6 +78,24 @@ namespace Controller
             }
             return ListPais;  
         }
+
+        public async static Task<List<Paise>> GetAsync()
+        {
+            List<Paise> ListPais;
+            try
+            {
+                using (SigivContext context = new SigivContext())
+                {
+                    var result = await context.Paises.ToListAsync();
+                    ListPais = result;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return ListPais;
+        }
         public async Task<bool> Actualizarpais(string IdPais, string Pais)
         {
             bool bandera = false;

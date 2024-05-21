@@ -83,14 +83,13 @@
             // cargosToolStripMenuItem
             // 
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            cargosToolStripMenuItem.Size = new Size(180, 22);
+            cargosToolStripMenuItem.Size = new Size(132, 22);
             cargosToolStripMenuItem.Text = "Cargos";
-            cargosToolStripMenuItem.Click += cargosToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(180, 22);
+            empleadosToolStripMenuItem.Size = new Size(132, 22);
             empleadosToolStripMenuItem.Text = "Empleados";
             // 
             // clientesToolStripMenuItem
@@ -98,6 +97,7 @@
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(180, 22);
             clientesToolStripMenuItem.Text = "Clientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
             // proveedoresToolStripMenuItem
             // 
@@ -239,6 +239,7 @@
             MainMenuStrip = menuStrip1;
             Name = "dashBoard";
             Text = "dashBoard";
+            WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

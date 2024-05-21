@@ -1,6 +1,6 @@
-﻿namespace view.Distritos
+﻿namespace view.Empleados
 {
-    partial class GestionDistritos
+    partial class GestionEmpleados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionDistritos));
-            dgvDistritos = new DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionEmpleados));
+            dgvEmpleados = new DataGridView();
             toolStrip1 = new ToolStrip();
             toolStripSeparator1 = new ToolStripSeparator();
             btnAgregar = new ToolStripButton();
@@ -40,23 +40,23 @@
             toolStripSeparator4 = new ToolStripSeparator();
             txbFiltrar = new ToolStripTextBox();
             btnFiltrar = new ToolStripLabel();
-            ((System.ComponentModel.ISupportInitialize)dgvDistritos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmpleados).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // dgvDistritos
+            // dgvEmpleados
             // 
-            dgvDistritos.AllowUserToAddRows = false;
-            dgvDistritos.AllowUserToDeleteRows = false;
-            dgvDistritos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDistritos.Dock = DockStyle.Fill;
-            dgvDistritos.Location = new Point(0, 27);
-            dgvDistritos.Margin = new Padding(3, 2, 3, 2);
-            dgvDistritos.Name = "dgvDistritos";
-            dgvDistritos.ReadOnly = true;
-            dgvDistritos.RowHeadersWidth = 51;
-            dgvDistritos.Size = new Size(800, 423);
-            dgvDistritos.TabIndex = 3;
+            dgvEmpleados.AllowUserToAddRows = false;
+            dgvEmpleados.AllowUserToDeleteRows = false;
+            dgvEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmpleados.Dock = DockStyle.Fill;
+            dgvEmpleados.Location = new Point(0, 27);
+            dgvEmpleados.Margin = new Padding(3, 2, 3, 2);
+            dgvEmpleados.Name = "dgvEmpleados";
+            dgvEmpleados.ReadOnly = true;
+            dgvEmpleados.RowHeadersWidth = 51;
+            dgvEmpleados.Size = new Size(800, 423);
+            dgvEmpleados.TabIndex = 3;
             // 
             // toolStrip1
             // 
@@ -67,7 +67,6 @@
             toolStrip1.Size = new Size(800, 27);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
-            toolStrip1.ItemClicked += toolStrip1_ItemClicked;
             // 
             // toolStripSeparator1
             // 
@@ -95,7 +94,6 @@
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(61, 24);
             btnEditar.Text = "Editar";
-            btnEditar.Click += btnEditar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -109,7 +107,6 @@
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(74, 24);
             btnEliminar.Text = "Eliminar";
-            btnEliminar.Click += btnEliminar_Click;
             // 
             // toolStripSeparator4
             // 
@@ -121,7 +118,6 @@
             txbFiltrar.Alignment = ToolStripItemAlignment.Right;
             txbFiltrar.Name = "txbFiltrar";
             txbFiltrar.Size = new Size(88, 27);
-            txbFiltrar.TextChanged += txbFiltrar_TextChanged;
             // 
             // btnFiltrar
             // 
@@ -132,16 +128,16 @@
             btnFiltrar.Size = new Size(57, 24);
             btnFiltrar.Text = "Filtrar";
             // 
-            // GestionDistritos
+            // GestionEmpleados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dgvDistritos);
+            Controls.Add(dgvEmpleados);
             Controls.Add(toolStrip1);
-            Name = "GestionDistritos";
-            Text = "DistritosGestion";
-            ((System.ComponentModel.ISupportInitialize)dgvDistritos).EndInit();
+            Name = "GestionEmpleados";
+            Text = "GestionEmpleados";
+            ((System.ComponentModel.ISupportInitialize)dgvEmpleados).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -150,7 +146,7 @@
 
         #endregion
 
-        private DataGridView dgvDistritos;
+        private DataGridView dgvEmpleados;
         private ToolStrip toolStrip1;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton btnAgregar;
