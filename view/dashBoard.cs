@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using view.Opciones;
 using view.Pais;
 
 namespace view
@@ -60,6 +61,12 @@ namespace view
         {
             view.Clientes.GestionClientes gestionClientes = new view.Clientes.GestionClientes();
             gestionClientes.ShowDialog();
+        }
+
+        private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionOpciones form = new GestionOpciones();
+            form.ShowDialog();
         }
     }
 }

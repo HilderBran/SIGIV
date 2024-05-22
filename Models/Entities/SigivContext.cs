@@ -61,7 +61,7 @@ public partial class SigivContext : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
-        => optionsBuilder.UseMySql("server=localhost;database=SIGIV;uid=root;pwd=admin", Microsoft.EntityFrameworkCore.ServerVersion.Parse("5.7.44-mysql"));
+        => optionsBuilder.UseMySql("server=localhost;database=SIGIV;uid=root;pwd=admin", Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect("server=localhost;database=SIGIV;uid=root;pwd=admin"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

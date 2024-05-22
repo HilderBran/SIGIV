@@ -54,6 +54,7 @@
             categoriasToolStripMenuItem = new ToolStripMenuItem();
             ventaToolStripMenuItem = new ToolStripMenuItem();
             generarVentaToolStripMenuItem = new ToolStripMenuItem();
+            opcionesToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             // 
             // administraciónToolStripMenuItem
             // 
-            administraciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { empleadoToolStripMenuItem, clientesToolStripMenuItem, proveedoresToolStripMenuItem, direccionesToolStripMenuItem, usuariosToolStripMenuItem });
+            administraciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { empleadoToolStripMenuItem, clientesToolStripMenuItem, proveedoresToolStripMenuItem, direccionesToolStripMenuItem, usuariosToolStripMenuItem, opcionesToolStripMenuItem });
             administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
             administraciónToolStripMenuItem.Size = new Size(100, 20);
             administraciónToolStripMenuItem.Text = "Administración";
@@ -83,14 +84,14 @@
             // cargosToolStripMenuItem
             // 
             cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            cargosToolStripMenuItem.Size = new Size(180, 22);
+            cargosToolStripMenuItem.Size = new Size(132, 22);
             cargosToolStripMenuItem.Text = "Cargos";
             cargosToolStripMenuItem.Click += cargosToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(180, 22);
+            empleadosToolStripMenuItem.Size = new Size(132, 22);
             empleadosToolStripMenuItem.Text = "Empleados";
             empleadosToolStripMenuItem.Click += empleadosToolStripMenuItem_Click;
             // 
@@ -232,6 +233,13 @@
             generarVentaToolStripMenuItem.Size = new Size(147, 22);
             generarVentaToolStripMenuItem.Text = "Generar venta";
             // 
+            // opcionesToolStripMenuItem
+            // 
+            opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            opcionesToolStripMenuItem.Size = new Size(180, 22);
+            opcionesToolStripMenuItem.Text = "Opciones";
+            opcionesToolStripMenuItem.Click += opcionesToolStripMenuItem_Click;
+            // 
             // dashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -276,5 +284,6 @@
         private ToolStripMenuItem ventaToolStripMenuItem;
         private ToolStripMenuItem generarVentaToolStripMenuItem;
         private ToolStripMenuItem empleadosToolStripMenuItem;
+        private ToolStripMenuItem opcionesToolStripMenuItem;
     }
 }
