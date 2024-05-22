@@ -1,6 +1,6 @@
-﻿namespace view.Clientes
+﻿namespace view.Cargos
 {
-    partial class GestionClientes
+    partial class GestionCargos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionClientes));
-            dgvClientes = new DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionCargos));
+            dgvCargos = new DataGridView();
             toolStrip1 = new ToolStrip();
             toolStripSeparator1 = new ToolStripSeparator();
             btnAgregar = new ToolStripButton();
@@ -39,29 +39,28 @@
             btnEliminar = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             txbFiltrar = new ToolStripTextBox();
-            btnFiltrar = new ToolStripLabel();
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCargos).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // dgvClientes
+            // dgvCargos
             // 
-            dgvClientes.AllowUserToAddRows = false;
-            dgvClientes.AllowUserToDeleteRows = false;
-            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Dock = DockStyle.Fill;
-            dgvClientes.Location = new Point(0, 27);
-            dgvClientes.Margin = new Padding(3, 2, 3, 2);
-            dgvClientes.Name = "dgvClientes";
-            dgvClientes.ReadOnly = true;
-            dgvClientes.RowHeadersWidth = 51;
-            dgvClientes.Size = new Size(800, 353);
-            dgvClientes.TabIndex = 5;
+            dgvCargos.AllowUserToAddRows = false;
+            dgvCargos.AllowUserToDeleteRows = false;
+            dgvCargos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCargos.Dock = DockStyle.Fill;
+            dgvCargos.Location = new Point(0, 27);
+            dgvCargos.Margin = new Padding(3, 2, 3, 2);
+            dgvCargos.Name = "dgvCargos";
+            dgvCargos.ReadOnly = true;
+            dgvCargos.RowHeadersWidth = 51;
+            dgvCargos.Size = new Size(800, 423);
+            dgvCargos.TabIndex = 5;
             // 
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnAgregar, toolStripSeparator2, btnEditar, toolStripSeparator3, btnEliminar, toolStripSeparator4, txbFiltrar, btnFiltrar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnAgregar, toolStripSeparator2, btnEditar, toolStripSeparator3, btnEliminar, toolStripSeparator4, txbFiltrar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(800, 27);
@@ -80,6 +79,7 @@
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(73, 24);
             btnAgregar.Text = "Agregar";
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // toolStripSeparator2
             // 
@@ -93,6 +93,7 @@
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(61, 24);
             btnEditar.Text = "Editar";
+            btnEditar.Click += btnEditar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -106,6 +107,7 @@
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(74, 24);
             btnEliminar.Text = "Eliminar";
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // toolStripSeparator4
             // 
@@ -115,30 +117,21 @@
             // txbFiltrar
             // 
             txbFiltrar.Alignment = ToolStripItemAlignment.Right;
+            txbFiltrar.BorderStyle = BorderStyle.FixedSingle;
             txbFiltrar.Name = "txbFiltrar";
             txbFiltrar.Size = new Size(88, 27);
+            txbFiltrar.TextChanged += txbFiltrar_TextChanged;
             // 
-            // btnFiltrar
-            // 
-            btnFiltrar.Alignment = ToolStripItemAlignment.Right;
-            btnFiltrar.Image = (Image)resources.GetObject("btnFiltrar.Image");
-            btnFiltrar.ImageTransparentColor = Color.Magenta;
-            btnFiltrar.Name = "btnFiltrar";
-            btnFiltrar.Size = new Size(57, 24);
-            btnFiltrar.Text = "Filtrar";
-            // 
-            // GestionClientes
+            // GestionCargos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 380);
-            Controls.Add(dgvClientes);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgvCargos);
             Controls.Add(toolStrip1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "GestionClientes";
-            Text = "GestionClientes";
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
+            Name = "GestionCargos";
+            Text = "GestionCargos";
+            ((System.ComponentModel.ISupportInitialize)dgvCargos).EndInit();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -147,7 +140,7 @@
 
         #endregion
 
-        private DataGridView dgvClientes;
+        private DataGridView dgvCargos;
         private ToolStrip toolStrip1;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton btnAgregar;
@@ -157,6 +150,5 @@
         private ToolStripButton btnEliminar;
         private ToolStripSeparator toolStripSeparator4;
         private ToolStripTextBox txbFiltrar;
-        private ToolStripLabel btnFiltrar;
     }
 }

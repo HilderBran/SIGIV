@@ -221,7 +221,7 @@ public partial class SigivContext : DbContext
             entity.HasIndex(e => e.IdPais, "idPais");
 
             entity.Property(e => e.IdDepartamento)
-                .HasMaxLength(2)
+                .HasMaxLength(3)
                 .IsFixedLength()
                 .HasColumnName("idDepartamento");
             entity.Property(e => e.Departamento1)
@@ -496,7 +496,7 @@ public partial class SigivContext : DbContext
                 .IsFixedLength()
                 .HasColumnName("idMunicipio");
             entity.Property(e => e.IdDepartamento)
-                .HasMaxLength(2)
+                .HasMaxLength(3)
                 .IsFixedLength()
                 .HasColumnName("idDepartamento");
             entity.Property(e => e.Municipio1)

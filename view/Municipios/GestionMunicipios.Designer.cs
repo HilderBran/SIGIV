@@ -1,6 +1,6 @@
-﻿namespace view.Clientes
+﻿namespace view.Municipios
 {
-    partial class GestionClientes
+    partial class GestionMunicipios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionClientes));
-            dgvClientes = new DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionMunicipios));
             toolStrip1 = new ToolStrip();
             toolStripSeparator1 = new ToolStripSeparator();
             btnAgregar = new ToolStripButton();
@@ -40,23 +39,10 @@
             toolStripSeparator4 = new ToolStripSeparator();
             txbFiltrar = new ToolStripTextBox();
             btnFiltrar = new ToolStripLabel();
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
+            dgvMunicipios = new DataGridView();
             toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvMunicipios).BeginInit();
             SuspendLayout();
-            // 
-            // dgvClientes
-            // 
-            dgvClientes.AllowUserToAddRows = false;
-            dgvClientes.AllowUserToDeleteRows = false;
-            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Dock = DockStyle.Fill;
-            dgvClientes.Location = new Point(0, 27);
-            dgvClientes.Margin = new Padding(3, 2, 3, 2);
-            dgvClientes.Name = "dgvClientes";
-            dgvClientes.ReadOnly = true;
-            dgvClientes.RowHeadersWidth = 51;
-            dgvClientes.Size = new Size(800, 353);
-            dgvClientes.TabIndex = 5;
             // 
             // toolStrip1
             // 
@@ -64,8 +50,8 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSeparator1, btnAgregar, toolStripSeparator2, btnEditar, toolStripSeparator3, btnEliminar, toolStripSeparator4, txbFiltrar, btnFiltrar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 27);
-            toolStrip1.TabIndex = 4;
+            toolStrip1.Size = new Size(700, 27);
+            toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator1
@@ -80,6 +66,7 @@
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(73, 24);
             btnAgregar.Text = "Agregar";
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // toolStripSeparator2
             // 
@@ -93,6 +80,7 @@
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(61, 24);
             btnEditar.Text = "Editar";
+            btnEditar.Click += btnEditar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -106,6 +94,7 @@
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(74, 24);
             btnEliminar.Text = "Eliminar";
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // toolStripSeparator4
             // 
@@ -117,6 +106,7 @@
             txbFiltrar.Alignment = ToolStripItemAlignment.Right;
             txbFiltrar.Name = "txbFiltrar";
             txbFiltrar.Size = new Size(88, 27);
+            txbFiltrar.TextChanged += txbFiltrar_TextChanged;
             // 
             // btnFiltrar
             // 
@@ -127,27 +117,39 @@
             btnFiltrar.Size = new Size(57, 24);
             btnFiltrar.Text = "Filtrar";
             // 
-            // GestionClientes
+            // dgvMunicipios
+            // 
+            dgvMunicipios.AllowUserToAddRows = false;
+            dgvMunicipios.AllowUserToDeleteRows = false;
+            dgvMunicipios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMunicipios.Dock = DockStyle.Fill;
+            dgvMunicipios.Location = new Point(0, 27);
+            dgvMunicipios.Margin = new Padding(3, 2, 3, 2);
+            dgvMunicipios.Name = "dgvMunicipios";
+            dgvMunicipios.ReadOnly = true;
+            dgvMunicipios.RowHeadersWidth = 51;
+            dgvMunicipios.Size = new Size(700, 311);
+            dgvMunicipios.TabIndex = 1;
+            // 
+            // GestionMunicipios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 380);
-            Controls.Add(dgvClientes);
+            ClientSize = new Size(700, 338);
+            Controls.Add(dgvMunicipios);
             Controls.Add(toolStrip1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "GestionClientes";
-            Text = "GestionClientes";
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
+            Name = "GestionMunicipios";
+            Text = "GestionMunicipios";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvMunicipios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dgvClientes;
         private ToolStrip toolStrip1;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton btnAgregar;
@@ -157,6 +159,7 @@
         private ToolStripButton btnEliminar;
         private ToolStripSeparator toolStripSeparator4;
         private ToolStripTextBox txbFiltrar;
+        private DataGridView dgvMunicipios;
         private ToolStripLabel btnFiltrar;
     }
 }
